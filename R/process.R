@@ -822,3 +822,7 @@ default_pty_options <- function() {
     cols = 80L
   )
 }
+
+signals <- function() {
+  .Call(c_processx__signals)
+}
